@@ -63,6 +63,7 @@ import ToggleButtonExamples from './examples/toggle-button/Index';
 // Test Routes
 /* eslint-disable import/first, import/no-extraneous-dependencies */
 import ActionFooterTestRoutes from 'terra-action-footer/tests/nightwatch/action-footer/ActionFooterTestRoutes';
+import ActionFooterContainerTestRoutes from 'terra-action-footer/tests/nightwatch/action-footer-container/ActionFooterContainerTestRoutes';
 import ActionFooterIndexRoutes from './examples/action-footer/ActionFooterIndexRoutes';
 import AlertTestRoutes from 'terra-alert/tests/nightwatch/AlertTestRoutes';
 import ArrangeTestRoutes from 'terra-arrange/tests/nightwatch/ArrangeTestRoutes';
@@ -209,6 +210,7 @@ ReactDOM.render((
     <Route path="/tests" component={TestContainer}>
       <IndexRoute component={TestLinks} />
       {ActionFooterTestRoutes}
+      {ActionFooterContainerTestRoutes}
       {AlertTestRoutes}
       {ArrangeTestRoutes}
       {AvatarTestRoutes}
